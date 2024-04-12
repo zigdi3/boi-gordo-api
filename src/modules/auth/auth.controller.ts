@@ -10,13 +10,13 @@ export class AuthController {
   @Post('login')
   @HttpCode(HttpStatus.CREATED)
   signupLocal(@Body() dto: AuthDto): Promise<Tokens> {
-    return this.authService.signupLocal(dto);
+    return this.authService.signinLocal(dto);
   }
 
-  @Post('local/signin')
+  @Post('local/signup')
   @HttpCode(HttpStatus.OK)
   signinLocal(@Body() dto: AuthDto): Promise<Tokens> {
-    return this.authService.signinLocal(dto);
+    return this.authService.signupLocal(dto);
   }
 
   @Post('logout')

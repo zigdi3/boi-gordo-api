@@ -24,6 +24,7 @@ export class AuthService {
     const user = await this.clientRepository
       .createClient({
         id: uuidv4(),
+        name: dto.name,
         email: dto.email,
         password: hash,
       })
