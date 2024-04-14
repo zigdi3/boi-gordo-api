@@ -17,9 +17,9 @@ import { AuthModule } from './modules/auth/auth.module';
     TypeOrmModule.forRoot({
       type: 'mssql',
       host: 'localhost',
-      port: 1433,
+      port: 1434,
       username: 'sa',
-      password: 'root1234',
+      password: '88d8bbe942c7',
       database: 'boi_gordo',
       options: { encrypt: false },
       synchronize: true,
